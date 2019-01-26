@@ -1,0 +1,25 @@
+{
+  "name": "zacgrac.net",
+  "version": "1.0.0",
+  "description": "Minimal personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachGraceffa/zacgrac.net.git"
+  },
+  "author": "Zachary T Graceffa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZachGraceffa/zacgrac.net/issues"
+  },
+  "homepage": "https://github.com/ZachGraceffa/zacgrac.net#readme",
+  "devDependencies": {
+    "express": "^4.16.4"
+  },
+  "dependencies": {
+    "npm": "^6.7.0"
+  }
+}
