@@ -44,10 +44,11 @@ function minifyAndTransport(){
 }
 
 //Watch
-function watchFiles(){
+function watchFiles(done){
     gulp.watch('app/scss/**/*.scss', gulp.series(buildSass, browserSyncReload));
     gulp.watch('app/*.html', browserSyncReload);
     gulp.watch('app/js/**/*.js', browserSyncReload);
+    done();
 }
 
 //Clean dist
