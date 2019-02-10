@@ -1,0 +1,26 @@
+$primary-color: #A73327;
+$secondary-color: #E7B258;
+$tertiary-color: #B3662E;
+$desert-background-color-4: #2453A3;
+$desert-background-color-3: #3A83df;
+$desert-background-color-2: #78CFFC;
+$desert-background-color-1: white;
+
+body.theme-desert {
+
+    background-image: linear-gradient($desert-background-color-4,$desert-background-color-3, $desert-background-color-2, $desert-background-color-1);
+
+    h1 {
+        color : $secondary-color;
+    }
+
+    article {
+        color: $primary-color;
+    }
+
+    footer {
+        a {
+            color: $tertiary-color;
+        }
+    }
+}
