@@ -2,6 +2,7 @@
 
 //Load plugins
 const gulp = require('gulp');
+const nodemon = require('gulp-nodemon');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const useref = require('gulp-useref');
@@ -12,11 +13,9 @@ const uglify = require('gulp-uglify');
 
 // BrowserSync Init
 function browserSyncInit(done) {
-  browserSync.init({
-    server: {
-      baseDir: 'app'
-    },
-    port: 3000
+  browserSync.init(null, {
+          proxy: "http://localhost:3000", // port of node server
+          port: 4000 //will not clash with node
   });
   done();
 }
@@ -57,8 +56,19 @@ function cleanBuildLoc(done) {
   done();
 }
 
+//Use Nodemon to route through Express
+function nodeServer(done) {
+    var callbackCalled = false;
+    return nodemon({script: 'app/server.js'}).on('start', function () {
+        if (!callbackCalled) {
+            callbackCalled = true;
+            done();
+        }
+    });
+}
+
 //define complex tasks
-const watch = gulp.parallel(watchFiles, browserSyncInit);
+const watch = gulp.series(nodeServer, gulp.parallel(watchFiles, browserSyncInit));
 const build = gulp.series(cleanBuildLoc, minifyAndTransport);
 
 // export tasks
