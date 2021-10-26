@@ -8,10 +8,10 @@
   0% {
     box-shadow: 8px 8px #03c2fc;
   }
-  12% {
+  25% {
     box-shadow: 4px 4px #1af053;
   }
-  87% {
+  75% {
     box-shadow: 8px 8px #03c2fc;
   }
 }
@@ -113,6 +113,14 @@ main section div div p {
 main section div div footer p {
   text-align: center;
   margin-bottom: 0rem;
+}
+main section div .about-me p {
+  padding-left: 0rem;
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-indent: 3rem;
 }
 
 footer {
