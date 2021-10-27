@@ -134,10 +134,6 @@ footer div h3 a {
   padding: 0.75rem;
   margin: 0.5rem;
 }
-footer div h3 .test {
-  color: #000;
-  background-color: #000;
-}
 footer div h3 a.external {
   background: linear-gradient(45deg, #CF85F0 90%, #FFF 10%);
 }
