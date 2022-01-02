@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="60">
+  <style>
+    text { font-size:50px; dominant-baseline:middle; text-anchor:middle; fill:blue; }
+  </style>
+
+  <text x="25" y="25">☻</text>
+  <text x="75" y="25">☺</text>
+  <text x="25" y="75">☺</text>
+  <text x="75" y="75">☻</text>
+</svg>
