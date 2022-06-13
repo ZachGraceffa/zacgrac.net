@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <polygon id="logo" points="0,0 48,0 60,40 0,40" stroke-linejoin="round" stroke="#0000FF" fill="#0000FF"/>
+  </defs>
+
+  <rect width="80" height="80" fill="#FCF1D9" />
+
+  <use x="10" y="10" href="#logo"/>
+</svg>
