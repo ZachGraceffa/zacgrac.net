@@ -11,13 +11,13 @@
     </radialGradient>
   </defs>
 
-	<rect x="10" y="10" width="80" height="80" fill="#FFA500" />
+  <rect x="10" y="10" width="80" height="80" fill="#FFA500" />
 
-	<line x1="20" y1="0" x2="20" y2="100" stroke="#0000FF" />
-	<line x1="80" y1="0" x2="80" y2="100" stroke="#0000FF" />
+  <line x1="20" y1="0" x2="20" y2="100" stroke="#0000FF" />
+  <line x1="80" y1="0" x2="80" y2="100" stroke="#0000FF" />
 
-	<line x1="0" y1="20" x2="100" y2="20" stroke="#0000FF" />
-	<line x1="0" y1="80" x2="100" y2="80" stroke="#0000FF" />
+  <line x1="0" y1="20" x2="100" y2="20" stroke="#0000FF" />
+  <line x1="0" y1="80" x2="100" y2="80" stroke="#0000FF" />
 
   <!-- using my graphical objects -->
   <use x="50" y="50" href="#myCircle" fill="url('#myGradient')" />
